@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <title>GAME OF DICE</title>
+</head>
+
+<body>
+  <div class="welcome">
+    <div>
+      <img src="dicebgr.png" alt="" />
+    </div>
+    <h1>GAME OF DICE</h1>
+    <p>Welcome to the table of champions.</p>
+    <label for="name"></label>
+    <input type="text" name="name" id="name" placeholder="Enter your first name"/>
+    <button class="startbtn" onclick="login()">START</button>
+    <p>&copy Gmax Technologies Ltd <span></span></p>
+  </div>
+  <!--Game panel-->
+  <div class="game">
+    <div>
+      <img src="dicebgr.png" alt="" />
+    </div>
+    <h1>Lets play</h1>
+    <p>May the best player win!!!</p>
+    <div class="play">
+      <div class="p1 parea">
+        <div class="scoreboard">
+          <div class="label">Player1 Score </div>
+          <div class="score1">0</div>
+        </div>
+        <div class="space">
+        </div>
+        <button onclick="rollSwap()">Wait</button>
+      </div>
+      <div class="p2 parea">
+        <div class="scoreboard">
+          <div class="label">Player2 Score </div>
+          <div class="score2">0</div>
+        </div>
+        <div class="space">
+        </div>
+        <button onclick="rollSwap()">Roll</button>
+      </div>
+    </div>
+    <div class="tScore">
+      <div class="tScore2"> ts2</div>
+      <div class="tsm"> tsm</div>
+      <div class="tScore1"> ts1</div>
+    </div>
+    <div class="message"></div>
+    <div class="btns">
+      <button class="newgame" onclick="newGame()">New Game</button>
+      <button class="back" onclick="back()">Exit</button>
+    </div>
+    <div class="dice">
+    </div>
+  </div>
+  <script src="main.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>
