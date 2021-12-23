@@ -197,7 +197,7 @@ exitApp = () =>{
 
 //Celebrate winner 
 winner = (pscore, pname) =>{
-  if(pscore == 11){
+  if(pscore == 6){
     alert('GAME OVER : ' + pname + ' wins. Start a New Game or Exit');
     p1Btn.disabled = true;
     p2Btn.disabled = true;
