@@ -112,12 +112,16 @@ turnState = () =>{
       player1Score++;
       p1Score.innerText = player1Score;
         turn = 0;
+      winner(player1Score, p1Name);
+
     }
     else if(ts1 > ts2){
       tsm.innerText = 'Player2 wins';
       player2Score++;
       p2Score.innerText = player2Score;
       turn = 0;
+      winner(player2Score, "Player2");
+
     }
     else{
       tsm.innerText = 'Its a draw';
